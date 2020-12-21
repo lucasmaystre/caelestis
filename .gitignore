@@ -1,0 +1,6 @@
+# `setuptools` build & distribution folders.
+/build/
+/dist/
+
+# Other.
+*.egg-info/
