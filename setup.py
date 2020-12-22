@@ -13,7 +13,7 @@ def readme():
 
 setuptools.setup(
     name="knowbox",
-    version="0.0.1",
+    version="0.0.2",
     author="Lucas Maystre",
     author_email="lucas@maystre.ch",
     description="Knowledge management system.",
