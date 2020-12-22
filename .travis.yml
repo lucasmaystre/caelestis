@@ -2,3 +2,11 @@ language: python
 python: 3.5
 install: pip install -e .
 script: pytest
+deploy:
+  provider: pypi
+  username: __token__
+  password:
+    secure: xYNbdnnISGxgrKBi0qIyQrRkATM0OvXgYXnPv2+N4HbgpROU23IqjqfHtXbS2X0sfKYWFjA9bFuE8yyickkgTUHsfy3OIvUdyp9n0Golnc8ULjRSXfIVFSFU/RtmSGlFu7F5jnG5m52M85mX5ZX/mtyhPKHZU4tW6U24vNEg4juqLXYuYGmy4ruPj4EtxLzMxmTrRjaVScCRmkzLScQP9pl/v4zoFAY75K+ZOvgeyKFzwnfdoBqzVDVk7tppIdbmWWdonJ9ynQI3Osv8V5fBkjcgh1LbviC9OE0t1vcDh0l0Lwnvx131bcWUhN0vERtluOOBI1QbZXIw7v/e++UUgXzXI1Ejf9L1+oHisJYUS4KHBcmUSVp0oAnaCORfdMzaYNN+GtTQLsdw5TYwIT6osrSF1RS6RKi9CqZvpXaD8pSlCURbcIRYSuFffgKBYsNJMXtY4+p1ryk2VpUiZgIIedpjEnzdxN6V2papF9rEsKVhjyMsyzqvIX0N4WmAd/+ulzo/wBjMYOkvbVw8/f+Ye3AmdZaeDRlGnZ4PvNrADS8bkkYOMaD3Zdc/mDwK1cM3BEpqx/ubirJWGIBwId18hod6vYrVCSBjcTpMkhTQe9g4eC6/j7DsLJpibSdTp2Dc8mXElMN+CbOfLgw3vvTdT/vKu9+QtXm3FwaUIic5XLw=
+  on:
+    tags: true
+    branch: master

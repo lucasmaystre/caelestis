@@ -1,0 +1,4 @@
+sh
+Click
+pytest
+bump2version
