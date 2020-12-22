@@ -15,6 +15,7 @@ Increment the version number using ``bump2version``.::
     bump2version [major|minor|patch]
 
 New releases are automatically deployed to PyPI via Travis CI.
+Don't forget to push tags: ``git push --tags``.
 
 
 .. |build-status| image:: https://travis-ci.com/lucasmaystre/knowbox.svg?branch=master
