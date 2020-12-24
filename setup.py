@@ -13,7 +13,7 @@ def readme():
 
 setuptools.setup(
     name="celestine",
-    version="0.1.1",
+    version="0.2.0",
     author="Lucas Maystre",
     author_email="lucas@maystre.ch",
     description="Knowledge management system.",
