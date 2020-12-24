@@ -1,11 +1,11 @@
-knowbox
-=======
+celestine
+=========
 
 |build-status|
 
-Installing ``knowbox`` is easy::
+Installing ``celestine`` is easy::
 
-    pip install knowbox
+    pip install celestine
 
 Development
 -----------
@@ -18,7 +18,7 @@ New releases are automatically deployed to PyPI via Travis CI.
 Don't forget to push tags: ``git push --tags``.
 
 
-.. |build-status| image:: https://travis-ci.com/lucasmaystre/knowbox.svg?branch=master
+.. |build-status| image:: https://travis-ci.com/lucasmaystre/celestine.svg?branch=master
    :alt: build status
    :scale: 100%
-   :target: https://travis-ci.com/lucasmaystre/knowbox
+   :target: https://travis-ci.com/lucasmaystre/celestine

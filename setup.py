@@ -12,13 +12,13 @@ def readme():
 
 
 setuptools.setup(
-    name="knowbox",
+    name="celestine",
     version="0.1.1",
     author="Lucas Maystre",
     author_email="lucas@maystre.ch",
     description="Knowledge management system.",
     long_description=readme(),
-    url="https://github.com/lucasmaystre/knowbox",
+    url="https://github.com/lucasmaystre/celestine",
     license="MIT",
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -37,7 +37,7 @@ setuptools.setup(
     ],
     entry_points="""
         [console_scripts]
-        kb=knowbox.main:main
+        ct=celestine.main:main
     """,
     include_package_data=True,
     zip_safe=False,

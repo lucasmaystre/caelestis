@@ -1,6 +1,6 @@
 from click.testing import CliRunner
 
-from knowbox import main
+from celestine import main
 
 
 def test_main():
