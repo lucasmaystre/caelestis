@@ -1,4 +1,7 @@
 import click
+import collections
+import json
+import os.path
 import platform
 import sh
 
@@ -13,6 +16,28 @@ def main():
 def test():
     """Example script."""
     click.echo("Hello World!")
+
+
+@click.command()
+@click.option("-l", "--list-files", is_flag=True)
+def tags(list_files):
+    """List all tags."""
+    root = sh.git("rev-parse", "--show-toplevel").stdout.decode().strip()
+    matches = collections.defaultdict(list)
+    for item in sh.rg("--json", " #[[:alnum:]]+", "-g", "*.md", root):
+        data = json.loads(item)
+        if data["type"] != "match":
+            continue
+        path = os.path.basename(data["data"]["path"]["text"])
+        for match in data["data"]["submatches"]:
+            tag = match["match"]["text"].strip()
+            matches[tag].append(path)
+    for tag, items in sorted(
+            matches.items(), key=lambda x: len(x[1]), reverse=True):
+        print(f"{tag: <15} {len(items): >3}")
+        if list_files:
+            for item in items:
+                print(f"  {item}")
 
 
 @click.command()
@@ -34,3 +59,4 @@ def sync():
 
 main.add_command(test)
 main.add_command(sync)
+main.add_command(tags)
