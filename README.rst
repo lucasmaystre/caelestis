@@ -21,4 +21,4 @@ Don't forget to push tags: ``git push --tags``.
 .. |build-status| image:: https://travis-ci.com/lucasmaystre/caelestis.svg?branch=master
    :alt: build status
    :scale: 100%
-   :target: https://travis-ci.com/lucasmaystre/caelestis
+   :target: https://app.travis-ci.com/github/lucasmaystre/caelestis
