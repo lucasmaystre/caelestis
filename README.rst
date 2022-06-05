@@ -1,11 +1,11 @@
-celestine
+caelestis
 =========
 
 |build-status|
 
-Installing ``celestine`` is easy::
+Installing ``caelestis`` is easy::
 
-    pip install celestine
+    pip install caelestis
 
 Development
 -----------
@@ -18,7 +18,7 @@ New releases are automatically deployed to PyPI via Travis CI.
 Don't forget to push tags: ``git push --tags``.
 
 
-.. |build-status| image:: https://travis-ci.com/lucasmaystre/celestine.svg?branch=master
+.. |build-status| image:: https://travis-ci.com/lucasmaystre/caelestis.svg?branch=master
    :alt: build status
    :scale: 100%
-   :target: https://travis-ci.com/lucasmaystre/celestine
+   :target: https://travis-ci.com/lucasmaystre/caelestis

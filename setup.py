@@ -12,13 +12,13 @@ def readme():
 
 
 setuptools.setup(
-    name="celestine",
+    name="caelestis",
     version="0.3.0",
     author="Lucas Maystre",
     author_email="lucas@maystre.ch",
     description="Knowledge management system.",
     long_description=readme(),
-    url="https://github.com/lucasmaystre/celestine",
+    url="https://github.com/lucasmaystre/caelestis",
     license="MIT",
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -37,7 +37,7 @@ setuptools.setup(
     ],
     entry_points="""
         [console_scripts]
-        ct=celestine.main:main
+        ct=caelestis.main:main
     """,
     include_package_data=True,
     zip_safe=False,
