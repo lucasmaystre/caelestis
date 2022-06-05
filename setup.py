@@ -13,7 +13,7 @@ def readme():
 
 setuptools.setup(
     name="caelestis",
-    version="0.4.1",
+    version="0.4.2",
     author="Lucas Maystre",
     author_email="lucas@maystre.ch",
     description="Knowledge management system.",
