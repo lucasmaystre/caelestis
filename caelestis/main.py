@@ -6,6 +6,9 @@ import platform
 import sh
 
 
+sh = sh.bake(_return_cmd=True)
+
+
 @click.group()
 @click.version_option()
 def main():
@@ -52,7 +55,7 @@ def sync():
     except sh.ErrorReturnCode_1:
         click.echo("No local changes to commit.")
     git.fetch()
-    git.rebase("origin/master")
+    git.rebase("origin/main")
     git.push()
     click.echo("Synchronization successful.")
 
